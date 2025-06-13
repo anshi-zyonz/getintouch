@@ -1,0 +1,82 @@
+body {
+      background-color: #121212;
+      margin: 0;
+      color: #f1f1f1;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+    a {
+      color: #00adb5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .section {
+      padding: 3rem 1rem;
+    }
+    .divider {
+      height: 1px;
+      background: #333;
+      margin: 2rem 0;
+    }
+    .portfolio-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .rotate-cw {
+      animation: rotateCW 4s linear infinite;
+    }
+    .rotate-ccw {
+      animation: rotateCCW 4s linear infinite;
+    }
+    .folder-open {
+      animation: folderOpen 2s ease-in-out infinite;
+    }
+    .touch {
+      animation: tap 1.5s infinite;
+    }
+    .mail-open {
+      animation: openMail 2s ease-in-out infinite;
+    }
+    .insta-fade {
+      animation: colorFade 4s ease-in-out infinite;
+    }
+    canvas#backgroundCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      pointer-events: none;
+    }
+    @keyframes rotateCW {
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes rotateCCW {
+      100% { transform: rotate(-360deg); }
+    }
+    @keyframes folderOpen {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(1.2); }
+    }
+    @keyframes tap {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(0.9); }
+    }
+    @keyframes openMail {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    @keyframes colorFade {
+      0% { color: #f09433; }
+      25% { color: #e6683c; }
+      50% { color: #dc2743; }
+      75% { color: #cc2366; }
+      100% { color: #bc1888; }
+    }
